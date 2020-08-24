@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: poll_results
+    database: unique-serenity-254521
+    schema: raw_polls
+    tables:
+      - name: results
