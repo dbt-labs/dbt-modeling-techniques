@@ -1,0 +1,5 @@
+version: 2
+
+analyses:
+  - name: daily_metrics
+    description: "{{ doc('daily_metrics') }}"

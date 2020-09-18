@@ -1,15 +1,4 @@
-Welcome to your new dbt project!
+# dbt modeling technique: Active Users
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+This dbt project is a worked example to demonstrate how to build a summary analysis of daily, weekly, and monthly active users.
+**Check out the full write-up [here](https://discourse.getdbt.com/t/modeling-changes-to-daily-weekly-monthly-active-users/1631), as well as the deployed docs for this project [here](https://www.getdbt.com/active-users).**

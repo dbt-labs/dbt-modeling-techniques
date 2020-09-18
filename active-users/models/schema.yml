@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: all_days
+    description: A generated table of all days, with one record per day.
+
+  - name: user_active_days_spined
+    description: "{{ doc('user_active_days_spined') }}"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - user_id
+            - date_day
+
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+
+      - name: date_day
+        tests:
+          - not_null
+
+      - name: is_active_today
+        tests:
+          - not_null
+
+      - name: is_active_l7_days
+        description: Whether this user was active within the last 7 days
+        tests:
+          - not_null
+
+      - name: is_active_l30_days
+        description: Whether this user was active within the last 30 days
+        tests:
+          - not_null
