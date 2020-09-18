@@ -6,9 +6,9 @@ final as (
     select
         date_day,
 
-        count(distinct case when is_active_today then user_id end) as daily_active_users,
-        count(distinct case when is_active_l7_days then user_id end) as weekly_active_users,
-        count(distinct case when is_active_l30_days then user_id end) as monthly_active_users
+        sum(is_active_today::integer) as daily_active_users,
+        sum(is_active_l7_days::integer) as weekly_active_users,
+        sum(is_active_l30_days::integer) as monthly_active_users
 
     from active_users
 
